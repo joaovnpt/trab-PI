@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Matemática Descomplicada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="iconindex.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="botao-sidebar-menu" onclick="toggleSidebar()"><span
+          class="menu-icon">&#9776;</span></a>
+      <nav>
+        <ul class="lista1">
+          <li class="topicos"><a class="alista" href="index.html">Home</a></li>
+          <li class="topicos"><a class="alista" href="topico2.html"
+              target="_blank">Calculadoras</a></li>
+          <li class="topicos"><a class="alista" href="topico3.html"
+              target="_blank">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="logo">
+      <img id="logoindex" src="imagenstopicos/logo.png" alt>
+    </div>
+    <div class="conteudo">
+      <h1 id="titulo1">Matemática Descomplicada</h1>
+    </div>
+    
+    <section class="topicos-container">
+      <div class="row">
+        <div class="box" id="boxpitagoras">
+          <a class="textobotao" href="topico1.html">Pitágoras</a>
+        </div>
+        <div class="box" id="boxbhaskara">
+          <a href="topico2.html">Bháskara</a>
+        </div>
+        <div class="box" id="boxvelocidademedia">
+          <a href="topico3.html">Velocidade média</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" id="boximc">
+          <a href="topico4.html">IMC</a>
+        </div>
+        <div class="box" id="boxpotenciacao">
+          <a href="topico5.html">Potenciação</a>
+        </div>
+        <div class="box" id="boxradiciacao">
+          <a href="topico6.html">Radiciação</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box" id="boxareapoligono">
+          <a href="topico7.html">Área de polígonos</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("sidebar-aberta");
+
+      var links = document.getElementsByClassName("alista");
+
+      for (var i = 0; i < links.length; i++) {
+        if (sidebar.classList.contains("sidebar-aberta")) {
+          links[i].style.display = "block";
+        } else {
+          links[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+    <footer class="container">
+      <p class="rodape">&copy; 2023 Matemática Descomplicada. Todos os direitos
+        reservados.</p>
+    </footer>
+
+  </body>
+
+</html>

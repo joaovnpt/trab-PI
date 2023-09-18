@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitágoras - Matemática Descomplicada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logoindex" src="imagenstopicos/logo.png" alt="">
+    </div>
+
+    <div class="retangulo">
+        <div class="cabecalho">
+            <h1>Bháskara</h1>
+        </div>
+        <div class="conteudo">
+            <p class="paragrafopitagoras">A matemática possui várias fórmulas para resolução de cálculos. Dentre elas,
+                uma das mais famosas e mais antigas, está a fórmula para calcular a hipotenusa de um triângulo
+                retângulo, por meio do valor de seus catetos. O cálculo da hipotenusa remonta à Grécia antiga e é usado
+                em diversas áreas da ciência e da engenharia. A hipotenusa é o lado mais longo de um triângulo
+                retângulo, que é aquele que possui um ângulo de 90 graus.
+            </p>
+            <p class="paragrafopitagoras">A história do cálculo da hipotenusa começa na antiga civilização da
+                Mesopotâmia, cerca 4000 anos atrás, onde foram encontradas evidências de que os babilônios já haviam
+                algumas experiências com números inteiros que satisfazem a relação descrita pelo teorema em questão. No
+                entanto, o teorema foi se tornar concreto quando um filósofo e matemático grego muito conhecido, chamado
+                Pitágoras, que viveu no século VI a.C. Pitágoras e seus seguidores descobriram que em um triângulo
+                retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos, podendo ser expressado por
+                a^2 + b^2 = c^2, onde “a” e “b” são as medidas dos catetos e “c” é a medida da hipotenusa, ou seja, ao
+                final da conta, ainda necessita-se de calcular a raiz quadrada do resultado, para assim, descobrir o
+                real valor da hipotenusa. Esse teorema ficou conhecido como Teorema de Pitágoras.
+            </p>
+            <p class="paragrafopitagoras">O teorema de Pitágoras é uma regra que relaciona os lados de um triângulo
+                retângulo, ou seja, a hipotenusa e os catetos. Vale ressaltar que essa expressão só é aplicável em
+                triângulos retângulos, ou seja, não pode ser usada em triângulos acutângulos e obtusângulos. Lembrando
+                que para um triângulo ser considerado retângulo, um dos seus ângulos precisa ter uma medida igual a 90
+                graus. O lado oposto a esse ângulo é chamado de hipotenusa, e o restante são chamados de catetos. O
+                Teorema de Pitágoras não necessariamente é usado para encontrar o valor da hipotenusa, pode ser usado
+                também para encontrar o valor de um dos catetos, usando assim o valor da hipotenusa e de um cateto. Além
+                de ser usado para relacionar os lados de um triângulo retângulo, ele é muito usado nas engenharia,
+                arquitetura, urbanização, construção civil e física.
+            </p>
+            <p class="paragrafopitagoras">Uma das características mais fascinantes do Teorema de Pitágoras é que ele
+                possui uma prova geométrica, que é baseada em construções geométricas simples e que pode ser visualmente
+                compreendida. Uma das provas geométricas mais conhecidas é a prova usando quadrados. Consiste em
+                desenhar três quadrados, um com área igual a a^2, outro com área igual a b^2 e o último com área igual a
+                c^2, onde c é a hipotenusa.
+            </p>
+        </div>
+    </div>
+    <div class="retangulo">
+        <p class="paragrafopitagoras">Esses quadrados são então dispostos de forma que os quadrados a^2 e b^2
+            compartilhem um lado em comum, formando um quadrado maior com área igual a c^2. Essa prova geométrica é um
+            exemplo clássico de como a matemática pode ser visualmente representada e compreendida, e é frequentemente
+            ensinada em escolas como uma introdução a esse cálculo.</p>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="botao-sidebar-menu" onclick="toggleSidebar()"><span class="menu-icon">&#9776;</span></a>
+        <nav>
+            <ul class="lista1">
+                <li class="topicos"><a class="alista" href="index.html">Home</a></li>
+                <li class="topicos"><a class="alista" href="topico2.html">Calculadoras</a></li>
+                <li class="topicos"><a class="alista" href="topico3.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("sidebar-aberta");
+
+            var links = document.getElementsByClassName("alista");
+
+            for (var i = 0; i < links.length; i++) {
+                if (sidebar.classList.contains("sidebar-aberta")) {
+                    links[i].style.display = "block";
+                } else {
+                    links[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <p class="rodape">&copy; 2023 Matemática Descomplicada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

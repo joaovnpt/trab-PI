@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiciação - Matemática Descomplicada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logoindex" src="imagenstopicos/logo.png" alt="">
+    </div>
+
+    <div class="retangulo">
+        <div class="cabecalho">
+            <h1>Radiciação</h1>
+        </div>
+        <div class="conteudo">
+            <p class="paragrafopitagoras">A radiciação foi criada por matemáticos árabes. Eles acreditavam que todo o
+                número tinha crescido de uma raiz quadrada, onde era preciso então, extrair a raiz. Por exemplo o número
+                16, ao extrair a raiz era sabido que cada lado mede 4. Sendo assim, transpondo para o entendimento
+                atual, a radiciação é uma operação realizada para saber qual é o número que multiplicado por ele mesmo
+                determinada quantidade de vezes, dá o número que conhecemos.
+            </p>
+            <p class="paragrafopitagoras">O símbolo utilizado para representar a operação de radiciação é o √(N&I).
+                Sendo que, o N (índice do radical) indica o número de vezes que o número desejado será multiplicado por
+                ele mesmo, e o I será o resultado dessa multiplicação. é o importante ressaltar que quando não há nada
+                no índice do radical, essa operação será uma raiz quadrada, ou seja, o índice será dois.
+            </p>
+            <p class="paragrafopitagoras">Para achar a raiz de um número maior, é mais fácil fazer a decomposição em
+                fatores primos. Por exemplo: <br>
+                ∛729= 729/3 <br>
+                243/3 <br>
+                81/3 <br>
+                27/3 <br>
+                9/3 <br>
+                3/3 =1
+            </p>
+            <p class="paragrafopitagoras">Como é uma raiz cúbica, todos esses números “3” virarão dois conjuntos
+                representados pelo número 3, que serão utilizados para fazer a operação “3.3 = 9”, ou seja, a raiz
+                cúbica de 729 é 9, pois 9.9.9 = 729.
+            </p>
+            <h4>2.6.1 PROPRIEDADES DA RADICIAÇÃO</h4>
+            <p class="paragrafopitagoras">Propriedade 1: A raiz em que o expoente do radicando é igual ao índice. <br>
+                <img src="radiciacao1.png" alt="">
+            </p>
+        </div>
+    </div>
+
+    <div class="retangulo">
+        <p class="paragrafopitagoras">Nesta propriedade, quando o índice for igual ao expoente do radicando, o
+            resultado é a própria base. <br>
+            Exemplo: <br>
+            <img src="radiciacao2.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">Propriedade 2: potência de expoente radical. <br>
+            <img src="radiciacao3.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">Aqui, o numerador da fração será o expoente do radicando, e o denominador será o
+            índice da raiz. <br>
+            Exemplo: <br>
+            <img src="radiciacao4.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">Propriedade 3: produto de raízes de índices iguais. <br>
+            <img src="radiciacao5.png" alt=""> <br>
+            Você deverá multiplicar o radicando das duas operações. <br>
+            Exemplo: <br>
+            <img src="radiciacao6.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">
+            Propriedade 4: quociente de raízes de índices iguais. <br>
+            <img src="radiciacao7.png" alt=""> <br>
+            Essa propriedade afirma que a divisão de duas raízes, é o mesmo que a raiz de mesmo índice da divisão dos
+            dois quocientes. <br>
+            <img src="radiciacao8.png" alt="">
+        </p>
+    </div>
+
+    <div class="retangulo">
+        <p class="paragrafopitagoras">
+            Propriedade 5: potência de uma raiz <br>
+            <img src="radiciacao9.png" alt=""> <br>
+            Aqui, o resultado da raiz elevada a um expoente, é o mesmo que a raiz do radicando elevada ao expoente. <br>
+            Exemplos: <br>
+            <img src="radiciacao10.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">
+            Propriedade 6: raiz de outra raiz
+        </p>
+        <p class="paragrafopitagoras">
+            <img src="radiciacao11.png" alt=""> <br>
+            Aqui, basta manter o radicando e multiplicar os índices. <br>
+            <img src="radiciacao12.png" alt="">
+        </p>
+        <p class="paragrafopitagoras">
+            Propriedade 7: simplificação de raízes. <br>
+            Todo radical pode ser escrito na forma de potência com expoente fracionário, exemplo: <br>
+            <img src="radiciacao13.png" alt="">
+        </p>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="botao-sidebar-menu" onclick="toggleSidebar()"><span class="menu-icon">&#9776;</span></a>
+        <nav>
+            <ul class="lista1">
+                <li class="topicos"><a class="alista" href="index.html">Home</a></li>
+                <li class="topicos"><a class="alista" href="topico2.html">Calculadoras</a></li>
+                <li class="topicos"><a class="alista" href="topico3.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("sidebar-aberta");
+
+            var links = document.getElementsByClassName("alista");
+
+            for (var i = 0; i < links.length; i++) {
+                if (sidebar.classList.contains("sidebar-aberta")) {
+                    links[i].style.display = "block";
+                } else {
+                    links[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <p class="rodape">&copy; 2023 Matemática Descomplicada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

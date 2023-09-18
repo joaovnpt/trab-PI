@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade média - Matemática Descomplicada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img id="logoindex" src="imagenstopicos/logo.png" alt="">
+    </div>
+
+    <div class="retangulo">
+        <div class="cabecalho">
+            <h1>Velocidade média</h1>
+        </div>
+        <div class="conteudo">
+            <p class="paragrafopitagoras">A velocidade média é um conceito fundamental na física, matemática e ciências aplicadas. Velocidade média é uma grandeza física que representa a rapidez com que um objeto se desloca em um determinado intervalo de tempo. É comumente expressa em unidades de medida como quilômetros por hora (km/h) ou metros por segundo (m/s).
+            </p>
+            <p class="paragrafopitagoras">A origem do conceito de velocidade remonta à antiguidade. Na Grécia Antiga, filósofos como Aristóteles e Zenão de Eleia já discutiam sobre a relação entre a distância e o tempo percorrido. No entanto, foi com o trabalho de cientistas e matemáticos como Galileu Galilei e Isaac Newton nos séculos XVI e XVII que a noção de velocidade começou a ser mais rigorosamente estudada e quantificada.
+            </p>
+            <p class="paragrafopitagoras">A história do cálculo da velocidade média remonta aos estudos de Galileu Galilei no século XVII. Ele utilizou a relação entre a distância percorrida e o tempo de queda dos objetos para determinar suas velocidades. No entanto, foi apenas no século XIX, com o desenvolvimento da mecânica clássica, que a velocidade média começou a ser amplamente utilizada. Galileu também foi o primeiro a propor a utilização de um instrumento, o cronômetro de água, para medir o tempo com maior precisão, o que foi fundamental para o desenvolvimento posterior do conceito de velocidade média.
+            </p>
+            <p class="paragrafopitagoras">O cálculo da velocidade média é feito pela divisão do deslocamento do objeto pelo tempo que levou para percorrer essa distância, com a fórmula Vm = Δd/Δt, onde Δd é a variação de distância e Δt é a variação de tempo. Essa fórmula indica que a velocidade média é obtida dividindo-se a mudança na distância pelo tempo gasto para essa mudança ocorrer. Por exemplo, se um carro percorre 100 km em 2 horas, sua velocidade média será de 50 km/h.
+            </p>
+            <p class="paragrafopitagoras">A história do cálculo da velocidade média remonta aos estudos de Galileu Galilei no século XVII. Ele utilizou a relação entre a distância percorrida e o tempo de queda dos objetos para determinar suas velocidades. No entanto, foi apenas no século XIX, com o desenvolvimento da mecânica clássica, que a velocidade média começou a ser amplamente utilizada.</p>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="botao-sidebar-menu" onclick="toggleSidebar()"><span class="menu-icon">&#9776;</span></a>
+        <nav>
+            <ul class="lista1">
+                <li class="topicos"><a class="alista" href="index.html">Home</a></li>
+                <li class="topicos"><a class="alista" href="topico2.html">Calculadoras</a></li>
+                <li class="topicos"><a class="alista" href="topico3.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("sidebar-aberta");
+
+            var links = document.getElementsByClassName("alista");
+
+            for (var i = 0; i < links.length; i++) {
+                if (sidebar.classList.contains("sidebar-aberta")) {
+                    links[i].style.display = "block";
+                } else {
+                    links[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <footer>
+        <div class="container">
+            <p class="rodape">&copy; 2023 Matemática Descomplicada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
